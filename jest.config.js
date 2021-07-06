@@ -1,7 +1,8 @@
 const config = {
-	testTimeout: 1000,
-	// setupFiles: ['./jest.setup.js'],
+	verbose: true,
 	displayName: 'CLIENT',
+	// setupFiles: ['./jest.setup.js'],
+	// testTimeout: 1000,
 };
 
 module.exports = config;

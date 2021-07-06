@@ -1,32 +1,19 @@
 const { add, myForEach } = require('./hello');
 
-// test('adding 2 numbers -- async await', async () => {
-// 	const res = await add(2, 4);
-// 	// console.log(typeof res, res);
-// 	expect(res).toBe(6);
-// });
+// sets the max time (in ms) that is allowed of each test case (not the complete file or suite)
+// jest.setTimeout(2000);
 
-jest.setTimeout(2000);
-
-test('adding 2 numbers -- promise', async () => {
-	const res = await add(2, 4);
-	console.log(typeof res, res);
-	expect(res).toBe(6);
-});
-test('adding 2 numbers -- promise', async () => {
-	const res = await add(2, 4);
-	console.log(typeof res, res);
-	expect(res).toBe(6);
-});
-test('adding 2 numbers -- promise', async () => {
-	const res = await add(2, 4);
-	console.log(typeof res, res);
-	expect(res).toBe(6);
-});
-test('adding 2 numbers -- promise', async () => {
-	const res = await add(2, 4);
-	console.log(typeof res, res);
-	expect(res).toBe(6);
+describe('yoyo', () => {
+	test('adding 2 numbers -- promise', async () => {
+		const res = await add(2, 4);
+		console.log(typeof res, res);
+		expect(res).toBe(6);
+	});
+	test('adding 2 numbers -- promise', async () => {
+		const res = await add(2, 4);
+		console.log(typeof res, res);
+		expect(res).toBe(6);
+	});
 });
 
 // const mockCallback = jest
